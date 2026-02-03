@@ -9,7 +9,6 @@ form.addEventListener('submit', (event) => {
     const textBox = document.createElement('div')
     const newP = document.createElement('p')
     const deleteX = document.createElement('p')
-    const topTask = toDoList.firstElementChild
 
     newP.classList.add('task')
     newP.textContent = newTask
@@ -21,7 +20,8 @@ form.addEventListener('submit', (event) => {
     textBox.appendChild(newP)
     textBox.appendChild(deleteX)
 
-    toDoList.insertBefore(textBox, topTask)
+    toDoList.insertBefore(textBox, toDoList.firstElementChild)
+    input.value = ''
   }
 });
 
