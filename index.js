@@ -16,7 +16,9 @@ const saveTasks = (text) => {
 form.addEventListener('submit', (event) => {
   event.preventDefault();
   const taskList = getTasks();
-  if (input.value !== '' && !taskList.includes(input.value)) {
+  if (input.value === ''){
+    alert('Please enter a task.')
+  } else if (!taskList.includes(input.value)) {
     const newTask = input.value;
     const textBox = document.createElement('div')
     const newP = document.createElement('p')
@@ -43,7 +45,7 @@ form.addEventListener('submit', (event) => {
 
     input.value = ''
   } else {
-    alert('Either your task is already listed or your entry is blank.')
+    alert('Your task is already listed.')
     input.value = ''
   }
 });
