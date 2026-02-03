@@ -6,7 +6,7 @@ To provide a neat and consolidated list of all the things you need to do in the 
 
 To Use:
 
-1. Enter the task/chore you need to complete in the input box next to the 'Add New' button.
+1. Type the task/chore you need to complete in the input field next to the 'Add New' button.
 
 2. Click on the 'Add New' button.
 
