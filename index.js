@@ -15,7 +15,8 @@ const saveTasks = (text) => {
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
-  if (input.value !== '') {
+  const taskList = getTasks();
+  if (input.value !== '' && !taskList.includes(input.value)) {
     const newTask = input.value;
     const textBox = document.createElement('div')
     const newP = document.createElement('p')
@@ -41,6 +42,8 @@ form.addEventListener('submit', (event) => {
     toDoList.insertBefore(textBox, toDoList.firstElementChild)
 
     input.value = ''
+  } else {
+    alert('Either your task is already listed or your entry is blank.')
   }
 });
 
