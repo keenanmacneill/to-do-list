@@ -2,8 +2,13 @@ body {
   text-align: center;
 }
 
+h1 {
+  font
+}
+
 input {
   width: 20em;
+  text-align: center;
 }
 
 section {
@@ -12,4 +17,22 @@ section {
   height: 32em;
   justify-self: center;
   margin: 1em 0 0 0;
+}
+
+p {
+  border: 1px black solid;
+  margin: 1em;
+  background-color: red;
+  color: white;
+}
+
+p:hover {
+  background-color: green;
+  color: white;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+  background-color: green;
+  color: white;
 }
