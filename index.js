@@ -1,6 +1,6 @@
-const input = document.querySelector('input');
-const form = document.querySelector('form');
-const toDoList = document.querySelector('#toDoList');
+const input = document.querySelector('#input-task');
+const form = document.querySelector('#form-task');
+const toDoList = document.querySelector('#to-do-list');
 // standardizes saved key in local storage
 const taskKey = 'task';
 // converts JSON in JS array from local storage
@@ -11,7 +11,6 @@ const getTasks = () => {
 const saveTasks = (text) => {
   localStorage.setItem(taskKey, JSON.stringify(text));
 };
-
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();

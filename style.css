@@ -15,7 +15,7 @@ h1 {
   font-size: 2em;
 }
 
-input {
+#input-task {
   width: 20em;
   height: 1.5em;
   text-align: center;
@@ -39,7 +39,7 @@ button:active {
   color: white;
 }
 
-#toDoList {
+#to-do-list {
   border: 1px black solid;
   border-radius: .5em;
   width: 25em;
