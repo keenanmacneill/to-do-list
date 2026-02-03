@@ -1,9 +1,11 @@
 body {
   text-align: center;
+  background-color: lightblue;
 }
 
 h1 {
-  font
+  font-weight: bold;
+  font-size: 2em;
 }
 
 input {
@@ -11,24 +13,55 @@ input {
   text-align: center;
 }
 
-section {
+button:hover {
+  font-weight: bold;
+}
+
+button:active {
+  background-color: black;
+  color: white;
+}
+
+#toDoList {
   border: 1px black solid;
+  border-radius: .5em;
   width: 20em;
   height: 32em;
   justify-self: center;
-  margin: 1em 0 0 0;
+  margin: 1em;
+  background-color: white;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
 }
 
-p {
+.textBox {
+  display: flex;
+  flex-direction: row;
+}
+
+.task {
   border: 1px black solid;
-  margin: 1em;
+  border-radius: .25em;
   background-color: red;
   color: white;
+  margin: .5em;
+  width: 85%;
+  align-content: center;
 }
 
-p:hover {
-  background-color: green;
-  color: white;
+.task:hover {
+  font-weight: bold;
+}
+
+.deleteX {
+  border: 1px black solid;
+  border-radius: .25em;
+  background-color: grey;
+  color: black;
+  margin .5em;
+  padding: .01em;
+  width: 5%;
 }
 
 .strikethrough {
