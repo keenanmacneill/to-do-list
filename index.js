@@ -44,6 +44,7 @@ form.addEventListener('submit', (event) => {
     input.value = ''
   } else {
     alert('Either your task is already listed or your entry is blank.')
+    input.value = ''
   }
 });
 
