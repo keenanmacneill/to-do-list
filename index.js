@@ -15,7 +15,7 @@ form.addEventListener('submit', (event) => {
     newP.textContent = newTask
 
     deleteX.classList.add('deleteX')
-    deleteX.textContent = 'x'
+    deleteX.textContent = 'X'
 
     textBox.classList.add('textBox')
     textBox.appendChild(newP)
@@ -29,3 +29,6 @@ toDoList.addEventListener('click', (element) => {
   if (element.target.classList.contains('task')) { element.target.classList.toggle('strikethrough') }
 })
 
+toDoList.addEventListener('click', (element) => {
+  if (element.target.classList.contains('deleteX')) { element.target.parentElement.remove() }
+})

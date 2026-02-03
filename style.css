@@ -1,3 +1,7 @@
+header {
+  cursor: default;
+}
+
 body {
   text-align: center;
   background-color: lightblue;
@@ -11,6 +15,10 @@ h1 {
 input {
   width: 20em;
   text-align: center;
+}
+
+button {
+  user-select: none;
 }
 
 button:hover {
@@ -48,6 +56,7 @@ button:active {
   margin: .5em;
   width: 85%;
   align-content: center;
+  cursor: default;
 }
 
 .task:hover {
@@ -62,6 +71,16 @@ button:active {
   margin .5em;
   padding: .01em;
   width: 5%;
+  cursor: default;
+  user-select: none;
+}
+
+.deleteX:hover {
+  font-weight: bold;
+}
+
+.deleteX:active {
+  background-color: red;
 }
 
 .strikethrough {
