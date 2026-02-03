@@ -1,0 +1,15 @@
+body {
+  text-align: center;
+}
+
+input {
+  width: 20em;
+}
+
+section {
+  border: 1px black solid;
+  width: 20em;
+  height: 32em;
+  justify-self: center;
+  margin: 1em 0 0 0;
+}
